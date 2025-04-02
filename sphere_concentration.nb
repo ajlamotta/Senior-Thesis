@@ -1,0 +1,116 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Wolfram 14.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       154,          7]
+NotebookDataLength[      3427,        108]
+NotebookOptionsPosition[      3072,         94]
+NotebookOutlinePosition[      3470,        110]
+CellTagsIndexPosition[      3427,        107]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"areaSphere", "[", "n_", "]"}], " ", ":=", " ", 
+   RowBox[{"2", " ", 
+    RowBox[{
+     RowBox[{"Pi", "^", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"n", " ", "+", " ", "1"}], ")"}], "/", "2"}], ")"}]}], " ", "/",
+      " ", 
+     RowBox[{"Gamma", "[", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"n", " ", "+", " ", "1"}], ")"}], "/", "2"}], "]"}]}]}]}], 
+  ";"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"equatorBandMeasure", "[", 
+    RowBox[{"n_", ",", " ", "eps_"}], "]"}], " ", ":=", " ", 
+   RowBox[{"Module", "[", " ", 
+    RowBox[{
+     RowBox[{"{", " ", 
+      RowBox[{
+       RowBox[{"fullArea", " ", "=", " ", 
+        RowBox[{"areaSphere", "[", "n", "]"}]}], ",", " ", 
+       RowBox[{"t", " ", "=", " ", 
+        RowBox[{
+         RowBox[{"eps", "^", "2"}], " ", 
+         RowBox[{"(", 
+          RowBox[{"1", " ", "-", " ", 
+           RowBox[{
+            RowBox[{"eps", "^", "2"}], "/", "4"}]}], ")"}]}]}]}], " ", "}"}], 
+     ",", " ", 
+     RowBox[{"If", "[", " ", 
+      RowBox[{
+       RowBox[{"eps", " ", "\[GreaterEqual]", " ", 
+        RowBox[{"Sqrt", "[", "2", "]"}]}], ",", " ", "fullArea", ",", " ", 
+       RowBox[{"fullArea", " ", "*", " ", 
+        RowBox[{"BetaRegularized", "[", 
+         RowBox[{"t", ",", " ", 
+          RowBox[{"1", "/", "2"}], ",", " ", 
+          RowBox[{"n", "/", "2"}]}], "]"}]}]}], " ", "]"}]}], " ", "]"}]}], 
+  ";"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"equatorBandDensity", "[", 
+    RowBox[{"n_", ",", " ", "eps_"}], "]"}], " ", ":=", " ", 
+   RowBox[{"Module", "[", " ", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"t", " ", "=", " ", 
+       RowBox[{
+        RowBox[{"eps", "^", "2"}], " ", 
+        RowBox[{"(", 
+         RowBox[{"1", " ", "-", " ", 
+          RowBox[{
+           RowBox[{"eps", "^", "2"}], "/", "4"}]}], ")"}]}]}], "}"}], ",", 
+     " ", 
+     RowBox[{"If", "[", 
+      RowBox[{
+       RowBox[{"eps", " ", "\[GreaterEqual]", " ", 
+        RowBox[{"Sqrt", "[", "2", "]"}]}], ",", " ", "1", ",", " ", 
+       RowBox[{"BetaRegularized", "[", 
+        RowBox[{"t", ",", " ", 
+         RowBox[{"1", "/", "2"}], ",", " ", 
+         RowBox[{"n", "/", "2"}]}], "]"}]}], " ", "]"}]}], " ", "]"}]}], 
+  ";"}]}], "Input",
+ CellChangeTimes->{{3.948878504497014*^9, 3.9488785082860613`*^9}, {
+  3.9525414492966013`*^9, 3.952541464141309*^9}, {3.952541646343334*^9, 
+  3.952541788483536*^9}},ExpressionUUID->"6c5934fb-8481-4d67-8992-\
+1bd6f7cc0a91"]
+},
+WindowSize->{808, 764},
+WindowMargins->{{352, Automatic}, {Automatic, 50}},
+FrontEndVersion->"14.2 for Mac OS X ARM (64-bit) (December 26, 2024)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"f8081c67-d54d-4757-b069-02cfaee0753c"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[554, 20, 2514, 72, 151, "Input",ExpressionUUID->"6c5934fb-8481-4d67-8992-1bd6f7cc0a91"]
+}
+]
+*)
+
