@@ -13,4 +13,4 @@ H = (A + A.T) / np.sqrt(2*n)
 eigenvalues = np.linalg.eigvalsh(H)
 
 # Save the eigenvalues to a CSV file (one column)
-np.savetxt("eigenvalues.csv", eigenvalues, delimiter=",")
+np.savetxt("wigner.csv", eigenvalues, delimiter=",")
