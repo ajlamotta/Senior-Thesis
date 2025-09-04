@@ -43,7 +43,7 @@ df = pd.DataFrame({
     'ecdf_n100': ecdf_100,
     'ecdf_n1000': ecdf_1000
 })
-df.to_csv("empirical_distribution.csv", index=False)
+df.to_csv("tw_clt.csv", index=False)
 
 # Print when done
-print("CSV file 'empirical_distribution.csv' generated successfully.")
+print("CSV file 'tw_clt.csv' generated successfully.")
