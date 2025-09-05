@@ -378,6 +378,20 @@ dependencies = [
 ]
 
 [[package]]
+name = "gaussian_sk"
+version = "0.1.0"
+dependencies = [
+ "csv",
+ "nalgebra",
+ "pariter",
+ "plotters",
+ "rand",
+ "rand_distr",
+ "rayon",
+ "serde",
+]
+
+[[package]]
 name = "getrandom"
 version = "0.2.15"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -396,20 +410,6 @@ checksum = "80792593675e051cf94a4b111980da2ba60d4a83e43e0048c5693baab3977045"
 dependencies = [
  "color_quant",
  "weezl",
-]
-
-[[package]]
-name = "grad_sq_simulation"
-version = "0.1.0"
-dependencies = [
- "csv",
- "nalgebra",
- "pariter",
- "plotters",
- "rand",
- "rand_distr",
- "rayon",
- "serde",
 ]
 
 [[package]]
