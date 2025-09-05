@@ -1,11 +1,7 @@
 [package]
-name = "grad_sq_simulation"
+name = "gaussian_sk"
 version = "0.1.0"
 edition = "2021"
-
-[[bin]]
-name = "grad_sq_simulation"
-path = "src/cas.rs"
 
 [dependencies]
 nalgebra = "0.32"
