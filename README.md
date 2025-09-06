@@ -1,21 +1,27 @@
 # Senior-Thesis
-This repository contains all relevant code and CSV files for my Harvard undergraduate senior math thesis. I had assistance from Lev Kruglyak and ChatGPT.
+This repository contains all relevant code and CSV files for my Harvard undergraduate senior math thesis. I had assistance from Lev Kruglyak and ChatGPT. A brief explanation of each file is as follows, along with where in my thesis the file was used.
+  
+<ins>CSV files</ins>
+- **Fig 3** (pg 11)
+  *gaussian_sk.csv* stores data (beta, N, variance_over_N) for plotting $\mathrm{Var}(F_{N,\beta})/N$ against $N$ ($\beta \in \{0.1,1,10\}$)
+- **Fig 4** (pg 14)
+  *wigner.csv* stores single column data for the histogram
+- **Fig 5** (pg 15)
+  *orthog_var.csv* stores data (N, beta, max_variance) for plotting $\mathrm{Var}(F_{N,\beta})/N$ against $N$ ($\beta \in \{0.1,1,10\}$)
+- **Fig 6** (pg 16)
+  *orthog_mean.csv* stores data (N, beta, max_mean) for plotting $\mathbb{E}[F_{N,\beta}]$ against $N$ ($\beta \in \{0.1,1,10\}$)
+- **Fig 9** (pg 22)
+  *binpacking.csv* stores data (n, var_b) for plotting $\mathrm{Var}(B)$ against $N$
+- **Fig 11** (pg 33)
+  *tw_clt.csv* stores data (x, ecdf_n10, ecdf_n100, ecdf_n1000) for plotting the 3 ECDFs ($n \in \{10,100,1000\}$)
 
-Python Files:
-1. bin_packing.py generates data to plot $\mathrm{Var}(B)$ in Fig 9, pg 22 (Bin Packing);
-    creates csv file binpacking.csv in format: n,var_b 
-2. tw_clt.py generates data to plot 3 ECDFs in Fig 11, pg 33 (Tracy-Widom CLT);
-    creates csv file tw_clt.csv in format: x,ecdf_n10,ecdf_n100,ecdf_n1000
-3. wigner.py generates data to plot histogram in Fig 4, pg 14 (Semicircular Law);
-    creates single column csv file wigner.csv
+<ins>Simulation files</ins>
+- *gaussian_sk* generates *gaussian_sk.csv*
+- *orthog* generates *orthog_var.csv* and *orthog_mean.csv*
+- *bin_packing.py* generates *bin_packing.csv*
+- *tw_clt.py* generates *tw_clt.csv*
+- *wigner.py* generates *wigner.csv*
 
-Mathematica:
-1. sphere_concentration.nb computes the surface densities in Fig 8, pg 19
-
-Rust files for SK simulations will be uploaded ASAP. These simulations create the following csv files:
-1. gaussian_sk.csv used in Fig 3, pg 11 (Gaussian SK);
-    format beta,N,variance_over_N
-2. orthog_var.csv used in Fig 5, pg 15 (Orthogonal SK, Variance);
-    format N,beta,max_variance
-3. orthog_mean.csv used in Fig 6, pg 16 (Orthogonal SK, Mean);
-    format N,beta,max_mean
+<ins>Other</ins>
+- **Fig 8** (pg 19)
+  *sphere_concentration.nb* contains Mathematica code for computing surface densities of equatorial bands
