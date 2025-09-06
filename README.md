@@ -1,5 +1,5 @@
 # Senior-Thesis
-This repository contains all relevant code and CSV files for my Harvard undergraduate senior math thesis. I had assistance from Lev Kruglyak and ChatGPT. A brief explanation of each file is as follows, along with where in my thesis the file was used.
+This repository contains all relevant code and CSV files for my Harvard undergraduate senior math thesis. I had assistance from Lev Kruglyak and ChatGPT. A brief explanation of each file is as follows, along with where in my thesis the file is used.
   
 <ins>CSV files</ins>
 - **Fig 3** (pg 11)
