@@ -56,5 +56,5 @@ def simulate_binpacking_variance(n_max=20, num_trials=100, csv_filename="binpack
 # Simulate
 N_MAX = 20
 NUM_TRIALS = 100
-CSV_FILENAME = "binpacking_var.csv"
+CSV_FILENAME = "bin_packing.csv"
 simulate_binpacking_variance(n_max=N_MAX, num_trials=NUM_TRIALS, csv_filename=CSV_FILENAME)
